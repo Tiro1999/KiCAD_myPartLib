@@ -7,7 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "90028674-df02-4a97-9b6a-f1543c380f90")
+		(uuid "518d6009-67ac-4161-8952-adc0342d39d8")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "092b5522-54cb-4dc6-ba26-44c5189a39ec")
+		(uuid "b8303ebb-030b-42e4-8b2a-ea56307c3381")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "99105ffe-cba3-4474-af23-62f06932ffb1")
+		(uuid "d5402a26-7e7b-4610-b53d-b1958df7f451")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "dd7afcc9-1d99-4fec-813e-5cf3a17e785c")
+		(uuid "3a915eb1-84b6-42d5-8dfa-e2384307e25f")
 		(effects
 			(font
 				(size 1 1)
@@ -59,7 +59,7 @@
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "88ff3b2d-e1d3-4686-8416-49c4044b15eb")
+		(uuid "9784f5ba-3caf-4f7b-b98e-dbb28a765d37")
 		(effects
 			(font
 				(size 1 1)
@@ -68,58 +68,58 @@
 		)
 	)
 	(pad "" thru_hole oval
-		(at 0 -7.62 90)
+		(at 0 -6.3 90)
 		(size 4 1.65)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "a5988faf-d74f-4bfa-982c-9fefaac24056")
+		(uuid "52068805-aa84-4746-99f9-27763d4b462d")
 	)
 	(pad "" thru_hole oval
-		(at 2.54 -7.62 90)
+		(at 2.54 -6.3 90)
 		(size 4 1.65)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "f23c8a9d-f5a0-406f-a4e9-4c170e74ec90")
+		(uuid "327e0adc-d40d-4f46-a74c-adb9115bf17f")
 	)
 	(pad "" thru_hole oval
-		(at 5.08 -7.62 90)
+		(at 5.08 -6.3 90)
 		(size 4 1.65)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "525bd8b5-935e-4dd4-ba49-9dced6893df1")
+		(uuid "23216307-9370-48de-a620-05962a8421f5")
 	)
 	(pad "" thru_hole oval
-		(at 7.62 -7.62 90)
+		(at 7.62 -6.3 90)
 		(size 4 1.65)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "68b42e1d-3897-4172-a195-ef0c24552aba")
+		(uuid "ee433a6e-bfac-4952-8732-6a48756257d4")
 	)
 	(pad "" thru_hole oval
-		(at 10.16 -7.62 90)
+		(at 10.16 -6.3 90)
 		(size 4 1.65)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "e03baf27-7c7d-4da6-be6f-69384349e38e")
+		(uuid "02c70762-f764-4b3f-8e12-92558eb0eb43")
 	)
 	(pad "" thru_hole oval
-		(at 12.7 -7.62 90)
+		(at 12.7 -6.3 90)
 		(size 4 1.65)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "ceef0301-15de-401b-aafd-1b4e1c129610")
+		(uuid "a151714d-b15e-402b-bdb7-79c055697943")
 	)
 	(pad "1" thru_hole rect
 		(at 0 -5.08 90)
@@ -128,7 +128,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "4f22f316-12f9-401f-9025-dfbe66c79653")
+		(uuid "30809a51-689e-46a7-ac96-764834f53e9b")
 	)
 	(pad "2" thru_hole oval
 		(at 2.54 -5.08 90)
@@ -137,7 +137,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "c47750df-6a7d-4105-a606-f802824bb64d")
+		(uuid "7e2039cc-112c-489b-aa31-15d644f5fedd")
 	)
 	(pad "3" thru_hole oval
 		(at 5.08 -5.08 90)
@@ -146,7 +146,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "ed189f87-845a-46fa-8db9-9344296a8477")
+		(uuid "96dde84e-5fd2-49de-891d-32c21933e035")
 	)
 	(pad "4" thru_hole oval
 		(at 7.62 -5.08 90)
@@ -155,7 +155,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "3f807db9-bd9a-449c-9f37-b335ba090a33")
+		(uuid "f4247bd3-2e4b-4a87-9522-f6c7de094d2b")
 	)
 	(pad "5" thru_hole oval
 		(at 10.16 -5.08 90)
@@ -164,7 +164,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "cb9e781c-7057-4e83-bfc3-745e12af8d4f")
+		(uuid "70554c74-69d4-4e95-906a-f31ae539d0b9")
 	)
 	(pad "6" thru_hole oval
 		(at 12.7 -5.08 90)
@@ -173,7 +173,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(die_length 1)
-		(uuid "e6417477-237d-4b1c-89bd-4406b7cb161b")
+		(uuid "ac1fa437-a527-40ca-ad9e-aa85816fff32")
 	)
 	(embedded_fonts no)
 )
