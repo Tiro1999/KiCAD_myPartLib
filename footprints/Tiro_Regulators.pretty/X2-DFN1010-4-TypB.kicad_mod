@@ -1,0 +1,138 @@
+(footprint "X2-DFN1010-4-TypB"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -4.8 1.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e47158ef-852e-4d90-a5a9-ad362af31ae8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "X2-DFN1010-4-TypB"
+		(at -4.8 3.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fa9b3e8a-feb7-4a8f-9d7e-a03c76e493c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "69be5275-ea85-405c-a14c-d17603df6c3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9099749b-75d8-476e-b425-3192f1e75530")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_text user "."
+		(at -0.4 0.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6a2f572e-3e14-49de-95d1-86793462105b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -4.8 4.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bece9a8b-f98a-448b-be53-0758c954f270")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0.13 -0.24 90)
+		(size 0.47 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0)
+		(chamfer_ratio 1)
+		(chamfer bottom_right)
+		(uuid "8ead1cda-d1ce-4883-af68-bcf3e7ac28a4")
+	)
+	(pad "2" smd roundrect
+		(at 0.78 -0.2 90)
+		(size 0.4 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.75)
+		(chamfer top_right)
+		(uuid "1fc80c2a-16d0-46ab-ac2b-87f65fdce985")
+	)
+	(pad "3" smd roundrect
+		(at 0.78 -1.1 90)
+		(size 0.4 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.75)
+		(chamfer top_left)
+		(uuid "0527658a-8adf-469c-951f-56bfda3190e4")
+	)
+	(pad "4" smd roundrect
+		(at 0.13 -1.1 90)
+		(size 0.4 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.75)
+		(chamfer bottom_left)
+		(uuid "de2fdf04-4174-464a-bbae-1d31e74b07b3")
+	)
+	(pad "5" smd rect
+		(at 0.45 -0.65 45)
+		(size 0.48 0.48)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1775ddf9-f41d-48bc-a882-91e0d057bf9e")
+	)
+	(embedded_fonts no)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/DFN1010H4-4.stp"
+		(opacity 0.8000)
+		(offset
+			(xyz 0.45 0.6 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
