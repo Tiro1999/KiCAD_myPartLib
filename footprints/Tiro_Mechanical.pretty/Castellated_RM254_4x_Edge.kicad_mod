@@ -1,0 +1,107 @@
+(footprint "Castellated_RM254_4x_Edge"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f986baa6-764c-4822-afae-5d9d0571bc9f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Castellated_RM254_4x_Edge"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0c6e3861-0598-4860-8c8e-9659b5b02b48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "084d5e7e-3188-4e38-b035-e9cb162f7594")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b8a2de9e-dee4-4b75-af5e-7bf59009f83b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4012d20c-6a4e-4629-8f4d-adbed194da10")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at 0 -5.08 90)
+		(size 2.65 1.65)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(die_length 1)
+		(uuid "2e7d71e6-e781-4283-9f29-48d4aa8b7b17")
+	)
+	(pad "2" thru_hole oval
+		(at 2.54 -5.08 90)
+		(size 2.65 1.65)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(die_length 1)
+		(uuid "7f5976c8-6916-47f1-ba7d-d0604dc3d136")
+	)
+	(pad "3" thru_hole oval
+		(at 5.08 -5.08 90)
+		(size 2.65 1.65)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(die_length 1)
+		(uuid "fbc05537-05c4-4d55-8e9b-30266ef2268c")
+	)
+	(pad "4" thru_hole oval
+		(at 7.62 -5.08 90)
+		(size 2.65 1.65)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(die_length 1)
+		(uuid "bb302b61-7739-4d31-9af6-4df19452ef9a")
+	)
+	(embedded_fonts no)
+)
