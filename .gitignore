@@ -1,0 +1,9 @@
+CLAUDE.md
+
+*-backups/
+*.kicad_prl
+*.kicad_*.lck
+fp-info-cache
+*.bak
+~*
+Thumbs.db
