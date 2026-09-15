@@ -1,0 +1,114 @@
+(footprint "DIODES_SOT-25"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(tags "SOT25")
+	(property "Reference" "REF**"
+		(at -7.25 -5.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "36953eee-7229-4a96-934d-7a863c94846a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "DIODES_SOT-25"
+		(at -7.25 -4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fe47485a-7c6c-4b7e-b7df-62b303fa6872")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.diodes.com/package/view/373.info?h=ae9a4a9ca0a47f5394a851ef416a295f40d0e3e132d53fbb0d24fb97acce430f"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3dc2de9-c553-43bd-ad8b-bf4a8055897d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "General Package SOT25 used for DIODES Products"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "30d8ff05-d8ff-4d29-817c-aa4c3d6b0b18")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_text user "${REFERENCE}"
+		(at -7.25 -2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b702bb8a-c0f0-47fb-8def-6e6f735a84dc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 1.9 -2.4)
+		(size 0.55 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "87ec7fa3-3e53-46c7-b9de-b43f997e313c")
+	)
+	(pad "2" smd rect
+		(at 0.95 -2.4)
+		(size 0.55 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ea7a9339-3124-44a2-9fc5-5b8c6283122e")
+	)
+	(pad "3" smd rect
+		(at 0 -2.4)
+		(size 0.55 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1cbf3668-e15e-40ab-b590-4a6321a5403a")
+	)
+	(pad "4" smd rect
+		(at 0 0)
+		(size 0.55 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "98cacdd3-edab-4937-9b1d-08d9ed748ce5")
+	)
+	(pad "5" smd rect
+		(at 1.9 0)
+		(size 0.55 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fbc19e1f-c8d6-409e-b76d-3f4118d3f6f7")
+	)
+	(embedded_fonts no)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/DIODES_SOT25.stp"
+		(opacity 0.7500)
+		(offset
+			(xyz 0.97 1.25 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)
