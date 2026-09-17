@@ -1,0 +1,104 @@
+(footprint "CREE_J-Series_JE2835"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "93257bd1-1daf-4bd6-a1ff-5a8435610e15")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "CREE_J-Series_JE2835"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "074dc968-153c-436f-9b23-4074707bad38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-2835-Color.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a77584bb-3689-4512-a6b0-fd8e9102ae7e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "J-Series Horticulture"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "506356fe-1e35-42e8-af6b-486975398530")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 1.6 -3.8)
+		(end 1.6 -2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bebf1be1-09ee-4514-a289-180f261b1723")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "91afe70e-f09a-441f-8708-6331c3b2eb80")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -3)
+		(size 2.2 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3954e253-9f93-4c94-9678-c8a2f3419376")
+	)
+	(pad "2" smd rect
+		(at 2.24 -3)
+		(size 1.1 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "96fa59ab-7e96-4ee9-a52f-be71907e0f24")
+	)
+	(embedded_fonts no)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/LED_SMD_3528-2835_CreeLED_JE2835.step"
+		(offset
+			(xyz 0.9 3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
+)
