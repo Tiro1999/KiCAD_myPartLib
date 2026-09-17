@@ -2,13 +2,13 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "PMMT491A,235"
+	(symbol "S1W0-2835xx8003-00000000-0P007"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "Q"
+		(property "Reference" "D"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28,7 +28,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Tiro_Discrete:Nexperia_SOT23"
+		(property "Footprint" "Tiro_Optoelectronics:S1W0_SMD_3528"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39,8 +39,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMMT491A.pdf"
-			(at -2.286 -7.874 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/211/S1W0-2835xx8003-00000000-0P007_Rev1.2_8-24-20.pdf"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -61,95 +61,129 @@
 				)
 			)
 		)
-		(property "ki_keywords" "BJT NPN"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PMMT491A,235_0_1"
+		(symbol "S1W0-2835xx8003-00000000-0P007_1_0"
 			(polyline
 				(pts
-					(xy 0 5.08) (xy 3.175 5.08)
+					(xy 2.54 3.81) (xy 2.54 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.175 6.985) (xy 3.175 3.175)
-				)
-				(stroke
-					(width 0.508)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 3.81 5.08)
-				(radius 2.8194)
 				(stroke
 					(width 0.254)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 5.08 3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 5.08 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.175 4.445) (xy 1.778 5.842)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.318 4.572) (xy 2.921 5.969)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 3.81) (xy 5.08 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 1.27) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "+"
+				(at 6.35 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 		)
-		(symbol "PMMT491A,235_1_1"
+		(symbol "S1W0-2835xx8003-00000000-0P007_1_1"
 			(polyline
 				(pts
-					(xy 3.175 5.715) (xy 5.08 7.62)
+					(xy 1.778 5.842) (xy 2.667 5.461) (xy 2.667 5.461) (xy 2.159 4.953) (xy 2.159 4.953) (xy 1.778 5.842)
 				)
 				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.175 4.445) (xy 5.08 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 3.302) (xy 4.318 3.81) (xy 4.826 2.794) (xy 3.81 3.302)
-				)
-				(stroke
-					(width 0)
-					(type default)
+					(width 0.254)
+					(type solid)
 				)
 				(fill
 					(type outline)
 				)
 			)
-			(pin input line
-				(at -2.54 5.08 0)
+			(polyline
+				(pts
+					(xy 2.921 5.969) (xy 3.81 5.588) (xy 3.81 5.588) (xy 3.302 5.08) (xy 3.302 5.08) (xy 2.921 5.969)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(pin passive line
+				(at 7.62 2.54 180)
 				(length 2.54)
-				(name "B"
+				(name "+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -165,9 +199,9 @@
 				)
 			)
 			(pin passive line
-				(at 5.08 0 90)
+				(at 0 2.54 0)
 				(length 2.54)
-				(name "E"
+				(name "-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -175,24 +209,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 5.08 10.16 270)
-				(length 2.54)
-				(name "C"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)

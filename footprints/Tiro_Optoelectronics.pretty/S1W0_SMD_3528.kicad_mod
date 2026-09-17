@@ -1,0 +1,105 @@
+(footprint "S1W0_SMD_3528"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c9ce27f1-6168-46d2-aaca-694ec41b064c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "S1W0_SMD_3528"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "011b85ef-68fc-4090-93c2-7a96bbdb1e6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/211/S1W0-2835xx8003-00000000-0P007_Rev1.2_8-24-20.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63130956-01ba-4363-8ecc-b3565b95d114")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2fe42e93-1e39-4b9b-9d86-0c0e4007e6ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0.9 -4)
+		(end 0.9 -2)
+		(stroke
+			(width 0.08)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "552aa730-f70e-4b93-be5c-a9e2a9a1630f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "33904847-aebb-4dff-8492-d044861a061a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -3)
+		(size 1.22 2.17)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c9fe4ffe-2aec-49a9-961d-ba279353ed03")
+	)
+	(pad "2" smd rect
+		(at 2.1 -3)
+		(size 2.28 2.17)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c9d1fc05-9147-44dc-b7cd-1886c7442ab3")
+	)
+	(embedded_fonts no)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/LED_SMD_3528-2835_SeoulSemi_S1W0-2835xx8003.step"
+		(opacity 0.6200)
+		(offset
+			(xyz 1.4 3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
