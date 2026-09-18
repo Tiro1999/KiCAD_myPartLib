@@ -7,7 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "93257bd1-1daf-4bd6-a1ff-5a8435610e15")
+		(uuid "89f377f3-c689-4aab-8769-011ae31e0765")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "074dc968-153c-436f-9b23-4074707bad38")
+		(uuid "c262007e-39a6-451f-b77d-7fdef0ce9baf")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a77584bb-3689-4512-a6b0-fd8e9102ae7e")
+		(uuid "01a7864e-4cfe-42af-832f-85efb836ee0e")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "506356fe-1e35-42e8-af6b-486975398530")
+		(uuid "686cc7d8-d679-45bd-ba4b-3ea62ad62fff")
 		(effects
 			(font
 				(size 1 1)
@@ -63,13 +63,13 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "bebf1be1-09ee-4514-a289-180f261b1723")
+		(uuid "3175b4a9-24df-48ca-ad3a-c8493e47b74a")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "91afe70e-f09a-441f-8708-6331c3b2eb80")
+		(uuid "265496c0-365e-40fa-8146-e7481a3debe4")
 		(effects
 			(font
 				(size 1 1)
@@ -81,16 +81,17 @@
 		(at 0 -3)
 		(size 2.2 1.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "3954e253-9f93-4c94-9678-c8a2f3419376")
+		(uuid "bdbc0b3b-4796-4c28-83c3-5fae8386de8e")
 	)
 	(pad "2" smd rect
 		(at 2.24 -3)
 		(size 1.1 1.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "96fa59ab-7e96-4ee9-a52f-be71907e0f24")
+		(uuid "3c5d86fd-48f3-46fc-9345-4432a8463ead")
 	)
 	(embedded_fonts no)
-	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/LED_SMD_3528-2835_CreeLED_JE2835.step"
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/SMD_LED/LED_SMD_3528-2835_CreeLED_JE2835.step"
+		(opacity 0.5000)
 		(offset
 			(xyz 0.9 3 0)
 		)

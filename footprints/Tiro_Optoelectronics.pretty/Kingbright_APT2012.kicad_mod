@@ -7,7 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "99fc7498-2358-42ba-9a15-2cc790a4d457")
+		(uuid "b872133a-af6e-4083-83ed-de5a766f0ba4")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "dd8b5614-130a-492d-843e-8dfaa3c98054")
+		(uuid "5bc112f5-b34a-4249-a29a-f9c941367c63")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "29834a9f-5a9f-4545-9603-39d3abff501c")
+		(uuid "81f4b9fd-5eae-4fc3-a338-d80e1c7d3d49")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "df97d31f-137a-4316-b90a-f796df936b6d")
+		(uuid "0617ad03-738d-4290-9dde-233bf740b28b")
 		(effects
 			(font
 				(size 1 1)
@@ -63,7 +63,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "ced354fb-df91-49df-8573-fdcd20654d2a")
+		(uuid "db491a77-16ac-457e-b572-2b2dab5566c7")
 	)
 	(fp_line
 		(start 1.5 -4.5)
@@ -73,13 +73,13 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "d0f9aa44-1cf6-4c4d-97bd-3512467ba9ea")
+		(uuid "c1273829-d612-4d47-99f2-5239bfaf6950")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "5c9ea61e-f8be-4f5c-81ba-b686c5f2098b")
+		(uuid "246e0d7f-f0a7-4782-a40e-8c3f1b053c15")
 		(effects
 			(font
 				(size 1 1)
@@ -91,25 +91,25 @@
 		(at 0 -5)
 		(size 1 1.1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "365afde9-f83f-47dd-bbda-2da5d119dc37")
+		(uuid "732715ab-32ef-4dc5-a9cc-76ecfadd3212")
 	)
 	(pad "2" smd rect
 		(at 2.1 -5)
 		(size 1 1.1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "60d0e093-d01a-44ac-910e-c72bab52d8aa")
+		(uuid "dfa904e8-7407-43cb-87a1-e4cb3da04d90")
 	)
 	(embedded_fonts no)
-	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/Kingbright_SMD_LED_APT2012.STEP"
-		(opacity 0.3700)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/SMD_LED/Kingbright_SMD_LED_APT2012.STEP"
+		(opacity 0.5200)
 		(offset
-			(xyz 1.09 5 0)
+			(xyz 1.05 5 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 -0 -180)
+			(xyz 90 -180 -0)
 		)
 	)
 )
