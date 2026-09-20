@@ -1,0 +1,555 @@
+(footprint "SENS_C_SoilMoisture_5cm_W16_dual"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Capacitive soil moisture probe, coplanar electrodes, mirrored on F.Cu and B.Cu, no vias inside the probe. Board 16 x 79.5 mm, electrode length 50 mm, dry zone 20 mm, insertion depth 59.5 mm below the soil line. Pad 1 = SENSE, pad 2 = GND (both strips). No solder mask or paste apertures - the copper stays under the mask. Board outline is on Dwgs.User, draw Edge.Cuts along it. Simulated 13.4 pF dry / 29.8 pF wet (eps_r 4 / 20, incl. 5 pF circuit parasitics) -> series R approx 11.1 kOhm for a 1.5 MHz 555 front end.")
+	(tags "soil moisture capacitive sensor probe coplanar electrode garden plant TLC555 LMC555 FDR")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "72b78b44-c7f6-5b79-9b35-900cd22ffa4e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SENS_C_SoilMoisture_5cm_W16_dual"
+		(at 0 81.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "281c6f17-43a9-519d-a018-7bdd35cb0bc3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b44efa46-f79b-5cfc-a4bb-e2c3d94eb1dc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Capacitive soil moisture probe"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c3d9d33-886e-5938-95b2-0fcfae4f9c21")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -8 0)
+		(end -8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "02b4664a-57b1-5263-b1b1-92b4d1d47701")
+	)
+	(fp_line
+		(start -8 72)
+		(end -0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "69f6de89-30a8-55ea-9b0e-88ea0b89ed22")
+	)
+	(fp_line
+		(start -0.5 79.5)
+		(end 0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "1ae5823d-4470-5198-a114-7c1061b4c4ef")
+	)
+	(fp_line
+		(start 0.5 79.5)
+		(end 8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "d4dfbc9a-07fc-5dfe-9a0e-72cf3aaaafe1")
+	)
+	(fp_line
+		(start 8 72)
+		(end 8 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "fd2439ad-2ad9-56e6-a0f1-7910753b4ee1")
+	)
+	(fp_line
+		(start -8 0)
+		(end -7 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "8d3bb6a9-f161-5f5b-855f-1b77c9a9ca77")
+	)
+	(fp_line
+		(start 8 0)
+		(end 7 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "0df0e3d7-7670-59d0-aa15-4f008052c971")
+	)
+	(fp_line
+		(start -8 0)
+		(end -8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cd27181d-a52d-589a-a8d2-750d562f2fd2")
+	)
+	(fp_line
+		(start -8 72)
+		(end -0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5ea6d498-9064-5725-a1cd-4c3e806d2d96")
+	)
+	(fp_line
+		(start -0.5 79.5)
+		(end 0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0f49d07b-1204-5a7b-9c8e-014ac5f5a76b")
+	)
+	(fp_line
+		(start 0.5 79.5)
+		(end 8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "59d01a54-0ac9-5ae5-9c42-64a56d6f3c38")
+	)
+	(fp_line
+		(start 8 72)
+		(end 8 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bf20d604-0919-5f07-8a16-8f64088d389c")
+	)
+	(fp_line
+		(start -8 0)
+		(end 8 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0b116aab-a277-561e-b3b9-235adfdd5f7d")
+	)
+	(fp_line
+		(start -8 20)
+		(end 8 20)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "086ceb18-99b8-57fa-a148-6b728ff55b1e")
+	)
+	(fp_line
+		(start -8 0)
+		(end -8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f31ec170-1ab5-5ed3-a583-772363b0ddaa")
+	)
+	(fp_line
+		(start -8 72)
+		(end -0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ec1d3c9a-bb77-5d4e-a4d8-eeecbb1ace87")
+	)
+	(fp_line
+		(start -0.5 79.5)
+		(end 0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0a4ce8eb-7f20-5fee-b5c8-603dfa77e553")
+	)
+	(fp_line
+		(start 0.5 79.5)
+		(end 8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e1ef4e3a-ba42-5943-9d1e-a21ea5fe1e18")
+	)
+	(fp_line
+		(start 8 72)
+		(end 8 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "233b5eac-2133-57d8-b747-2d214401980c")
+	)
+	(fp_line
+		(start -8 0)
+		(end 8 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a8352520-9cf8-586c-bb78-e8081b2a916f")
+	)
+	(fp_line
+		(start -8 0)
+		(end -8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "376d56e3-6a92-5011-a677-9b43c41bcb26")
+	)
+	(fp_line
+		(start -8 72)
+		(end -0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "1bdae86d-dedd-5b02-bcae-413d3f08ca2f")
+	)
+	(fp_line
+		(start -0.5 79.5)
+		(end 0.5 79.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "6897c04c-a754-5dc3-b8a5-ececf4de58cb")
+	)
+	(fp_line
+		(start 0.5 79.5)
+		(end 8 72)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "fa5dac4b-fa11-5b3d-93b1-c442503ae0be")
+	)
+	(fp_line
+		(start 8 72)
+		(end 8 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "433b446f-125d-5abd-9b50-9dd3f52e20a0")
+	)
+	(fp_line
+		(start -8 0)
+		(end 8 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "84d1607b-f67b-5584-a656-991465e44a1e")
+	)
+	(fp_line
+		(start -7.7 20)
+		(end 7.7 20)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "71caa28b-1802-5fe0-a088-b8fc20983a3e")
+	)
+	(fp_line
+		(start -7.7 20)
+		(end 7.7 20)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "d76e1fcf-7eab-583c-997f-8b4debf6bcf7")
+	)
+	(fp_text user "SOIL"
+		(at 0 18.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "442e57ed-9cb4-5fd9-ad11-890f176736c9")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_line
+		(start -7.7 30)
+		(end -7.1 30)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cda963a9-2324-56c1-8f54-db966a224aa6")
+	)
+	(fp_line
+		(start -7.7 40)
+		(end -7.1 40)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2e2386e8-f0c4-5955-b7b0-ab587a9aef5b")
+	)
+	(fp_line
+		(start -7.7 50)
+		(end -7.1 50)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6e6f7cf1-1d27-56da-a6af-354dd868f50a")
+	)
+	(fp_line
+		(start -7.7 60)
+		(end -7.1 60)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c5ddfd31-7d64-52a1-b270-88b0aadbbc2c")
+	)
+	(fp_line
+		(start -7.7 70)
+		(end -6.6 70)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ad45c581-5f99-54bd-8555-feaa900efeda")
+	)
+	(pad "1" smd rect
+		(at 0 10.15)
+		(size 0.6 20.3)
+		(layers "F.Cu")
+		(uuid "0cefb463-9570-5e41-b6b6-ee7dff0eca2b")
+	)
+	(pad "1" smd rect
+		(at 0 45)
+		(size 5 50)
+		(layers "F.Cu")
+		(uuid "3f4bbb14-90d0-57a6-b1b2-34ee2555496e")
+	)
+	(pad "2" smd rect
+		(at -5.5 35)
+		(size 2 70)
+		(layers "F.Cu")
+		(uuid "abd0cc30-545b-55d9-ba10-75cdae4c1905")
+	)
+	(pad "2" smd rect
+		(at 5.5 35)
+		(size 2 70)
+		(layers "F.Cu")
+		(uuid "e806e5aa-7382-5711-b610-3eca72ffdb29")
+	)
+	(pad "1" smd rect
+		(at 0 10.15)
+		(size 0.6 20.3)
+		(layers "B.Cu")
+		(uuid "f0ea60b3-24f0-532e-9113-49be1ce0001d")
+	)
+	(pad "1" smd rect
+		(at 0 45)
+		(size 5 50)
+		(layers "B.Cu")
+		(uuid "0ae3334e-e95c-5eeb-a2cd-0819f4024832")
+	)
+	(pad "2" smd rect
+		(at -5.5 35)
+		(size 2 70)
+		(layers "B.Cu")
+		(uuid "94674ca3-001f-5a1f-8278-baf84b0038c0")
+	)
+	(pad "2" smd rect
+		(at 5.5 35)
+		(size 2 70)
+		(layers "B.Cu")
+		(uuid "1d8751b3-e22a-5aaa-ae5b-20c221c1cec1")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F&B.Cu")
+		(uuid "ac5c6507-5482-5fef-b9f1-08a6fcb49b60")
+		(name "dry zone - keep clear for housing seal")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -8 0)
+				(xy 8 0)
+				(xy 8 20)
+				(xy -8 20)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 83 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8b7eb6df-c1a8-595f-a9eb-da5ae5844fea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "Edge.Cuts: trace the Dwgs.User outline"
+		(at 0 85 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "dc539d96-76ab-5c7a-86dd-d7841ea02615")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "pad 1 = SENSE, pad 2 = GND, no mask/paste"
+		(at 0 86.5 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "1517856c-2084-5bcf-9be7-01f2f9d7a3fa")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "connect F.Cu/B.Cu in the head only - no vias in the probe"
+		(at 0 88 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "3a82faae-7749-5be1-ba4b-401c9657ab4f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "W 16  edge 1.5  GND 2  gap 2  sense 5 mm"
+		(at 0 89.5 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "502ae5b1-1447-56cb-9a19-18cc8e8f897c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "sim 13.4 pF dry / 29.8 pF wet  ->  R 11.1 k @ 1.5 MHz"
+		(at 0 91 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "8dad7d49-a493-52d5-9cce-e1ba261cd052")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
