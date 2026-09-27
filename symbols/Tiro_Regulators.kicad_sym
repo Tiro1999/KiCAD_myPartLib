@@ -926,6 +926,255 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "AP7361C-33SPR-13"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "LDO"
+			(at 5.334 0.762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tiro_Regulators:SOIC-8_EP"
+			(at 6.35 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "AP7361C-33SPR-13_0_1"
+			(rectangle
+				(start 0 16.002)
+				(end 10.16 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0.762 15.24)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "AP7361C-33SPR-13_1_1"
+			(pin output line
+				(at -2.54 13.97 0)
+				(length 2.54)
+				(name "Vout"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -2.54 10.16 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -2.54 6.35 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 2.54 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 6.35 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 13.97 180)
+				(length 2.54)
+				(name "Vin"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 18.542 270)
+				(length 2.54)
+				(name "EXP_PAD"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "X2-DFN1010-4-TypB"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1263,6 +1512,63 @@
 		)
 		(property "Footprint" "Tiro_Regulators:TO252-2_DPAK"
 			(at 0.254 -2.286 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "AP7361C-33SP-13"
+		(extends "AP7361C-33SPR-13")
+		(property "Reference" "LDO"
+			(at 5.334 0.762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tiro_Regulators:SOIC-8_EP"
+			(at 6.35 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
