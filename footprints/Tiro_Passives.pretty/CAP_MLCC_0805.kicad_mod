@@ -1,0 +1,202 @@
+(footprint "CAP_MLCC_0805"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "MLCC 0805 (2012 metrisch), Koerper 2x1.25x1.25mm, Land Pattern IPC-7351B Nominal")
+	(tags "capacitor C MLCC 0805 2012Metric")
+	(property "Reference" "REF**"
+		(at 0 -1.73 0)
+		(layer "F.SilkS")
+		(uuid "e24a96f8-2d10-46e1-9ad9-71e3341ced6d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CAP_MLCC_0805"
+		(at 0 1.73 0)
+		(layer "F.Fab")
+		(uuid "e4df01ab-c41f-44e3-9e62-e2f893454095")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75323f32-6132-47d7-9721-594e222e1106")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fc6a7f7-3fb1-4973-8af5-168ca7ddf617")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.25 -0.745)
+		(end 0.25 -0.745)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9471ee44-bca8-44aa-b2de-1102e6e758bc")
+	)
+	(fp_line
+		(start -0.25 0.745)
+		(end 0.25 0.745)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "50021480-0564-4ed2-bea4-09dfb6c69f0a")
+	)
+	(fp_line
+		(start -1.7 -0.98)
+		(end 1.7 -0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7335605f-79d8-43df-86a8-5eb043d4544c")
+	)
+	(fp_line
+		(start -1.7 0.98)
+		(end -1.7 -0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "26ed8090-6f2b-4b0a-a44f-92ac96cbc415")
+	)
+	(fp_line
+		(start 1.7 -0.98)
+		(end 1.7 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "af1c8381-b199-48fd-8a5b-5542f7342c9c")
+	)
+	(fp_line
+		(start 1.7 0.98)
+		(end -1.7 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "45d4fe2c-3faf-4dd9-a13e-7883957940c4")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "092c2d49-528b-4eef-9c83-85d0e2089201")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c666db19-40d1-423c-a59d-dc9bde99d4da")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1a318823-e6d8-4ad1-b330-aec39a8943df")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0d8b54ec-d9de-4cb2-9435-1c09afafa1e4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "76d16925-e5c6-4e85-a435-2e7335920847")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "0f0af033-3069-40b7-9617-a39505f7c8fd")
+	)
+	(pad "2" smd roundrect
+		(at 0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "6cf798db-179a-4784-a8d8-6a45eafa5c35")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/CAP_MLCC_0805.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/CAP/Tiro_CAP_MLCC_0805.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
