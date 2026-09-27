@@ -7,7 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "fae2cd05-9a2d-4283-88ba-33d692b3d143")
+		(uuid "72fe8f74-de22-426e-a835-3f5e1efc81ed")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "72c7f3ee-07c2-419e-a469-8895065e8ed9")
+		(uuid "40651224-e13c-4da7-83ba-413d17c592c9")
 		(effects
 			(font
 				(size 1 1)
@@ -27,12 +27,12 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.vishay.com/docs/84286/veml7700.pdf"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d331c623-5495-4776-88fc-9f6ec57dfd5c")
+		(uuid "6d025ef9-2880-4da6-9cd8-55a49f6f169a")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "650f7cbc-65a7-4b8b-965b-99125c40df9c")
+		(uuid "84847950-fdd6-467b-8783-1a98a79143ab")
 		(effects
 			(font
 				(size 1 1)
@@ -103,4 +103,16 @@
 		(uuid "51821ce7-23ce-405f-879d-510cabcaf7a4")
 	)
 	(embedded_fonts no)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/SENS_ILLUMINENCE/VISHAY_84592_VEML7700.stp"
+		(opacity 0.7000)
+		(offset
+			(xyz 1.95 5 0.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
