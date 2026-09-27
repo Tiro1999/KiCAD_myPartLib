@@ -1,0 +1,276 @@
+(footprint "SOT89-5"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SOT89-5, Pitch 1.5 mm, Tab = Pin 2, Suggested Pad Layout nach Diodes AP7361C DS37274 Rev. 4-2/5-2 (Gehäuse auch AP2112R5/R5A), TiroLib")
+	(tags "SOT89-5 SOT-89-5 AP2112R5 AP7361C-Y5")
+	(property "Reference" "REF**"
+		(at 0 -3.4 0)
+		(layer "F.SilkS")
+		(uuid "d120daa5-c134-4871-897e-f93743c8c97d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT89-5"
+		(at 0 3.4 0)
+		(layer "F.Fab")
+		(uuid "410a5872-cceb-4f6c-b5a5-291d82bd1940")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26eb972c-9dd6-44dd-a794-732aa2689e0b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9441832-eb86-42d6-9c90-254e24b1e9c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.25 -2.36)
+		(end -1.36 -2.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b0a1104d-a058-462e-ace1-771be3a2fe9d")
+	)
+	(fp_line
+		(start -1.36 -2.36)
+		(end -1.36 -2.04)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1519a29f-a935-4c8d-bcc1-cffa3984fcd0")
+	)
+	(fp_line
+		(start -1.36 -2.36)
+		(end 1.36 -2.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8abd5196-0522-49da-9611-6eb6d1f12e4c")
+	)
+	(fp_line
+		(start -1.36 -0.96)
+		(end -1.36 -0.58)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "132d0f5b-3cc4-488a-8cd3-a1af99c9d322")
+	)
+	(fp_line
+		(start -1.36 0.58)
+		(end -1.36 0.96)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5a6d1ed1-c0a3-44b7-b825-1fd6d543fbd0")
+	)
+	(fp_line
+		(start -1.36 2.04)
+		(end -1.36 2.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea3cf0ec-11aa-4e8c-94b4-e894fd6f4daa")
+	)
+	(fp_line
+		(start -1.36 2.36)
+		(end 1.36 2.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8fed5cc6-0cd8-493e-b072-bbb7ad1654b7")
+	)
+	(fp_line
+		(start 1.36 -2.36)
+		(end 1.36 -2.04)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8dc3a5bb-eee0-47c2-8dc4-d67d93b66c42")
+	)
+	(fp_line
+		(start 1.36 2.04)
+		(end 1.36 2.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff8d7799-9eb8-4794-b549-37808a774ab6")
+	)
+	(fp_rect
+		(start -2.5 -2.5)
+		(end 2.5 2.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9f300609-d55e-497a-8dff-4cbdf26f3172")
+	)
+	(fp_line
+		(start -1.25 -1.625)
+		(end -0.625 -2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f0412937-cf7f-4245-9b7d-534f6ea102af")
+	)
+	(fp_line
+		(start -1.25 2.25)
+		(end -1.25 -1.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1da6f89d-ab52-45e5-b1ff-020721422709")
+	)
+	(fp_line
+		(start -0.625 -2.25)
+		(end 1.25 -2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bfdab95d-e57e-4562-ab14-a4db5a7ce8fd")
+	)
+	(fp_line
+		(start 1.25 -2.25)
+		(end 1.25 2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "64571245-e4ac-4877-8539-335b919b7c04")
+	)
+	(fp_line
+		(start 1.25 2.25)
+		(end -1.25 2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5f548094-e7f5-45cb-b213-e9aa5e1a5bc3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6a395b67-6ecb-4adb-8e1f-16ec0b32792c")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1125)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.65 -1.5)
+		(size 1.2 0.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "856eeacb-4203-4e55-a9ee-a8506e5e745d")
+	)
+	(pad "2" smd custom
+		(at -1.65 0)
+		(size 0.76 0.76)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 3.65 -0.965) (xy 3.65 0.965) (xy 2.45 0.965) (xy 2.45 0.38) (xy -0.6 0.38) (xy -0.6 -0.38)
+					(xy 2.45 -0.38) (xy 2.45 -0.965)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "a499a374-1ebd-42de-ac29-239abebaad3a")
+	)
+	(pad "3" smd roundrect
+		(at -1.65 1.5)
+		(size 1.2 0.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "af788b53-c1a0-4f9a-958e-4699fc5bd8b3")
+	)
+	(pad "4" smd roundrect
+		(at 1.65 1.5)
+		(size 1.2 0.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "d1efc53c-9bd7-4bc0-a280-3a0ba8d5e07e")
+	)
+	(pad "5" smd roundrect
+		(at 1.65 -1.5)
+		(size 1.2 0.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ded0eec6-2983-464c-aaf8-929e26cf6411")
+	)
+	(embedded_fonts no)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/TiroLib/SOT89-5.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

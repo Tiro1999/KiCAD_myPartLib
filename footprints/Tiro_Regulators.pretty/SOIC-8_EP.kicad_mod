@@ -1,0 +1,259 @@
+(footprint "SOIC-8_EP"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SO-8EP, 3.85x4.9 mm, Pitch 1.27 mm, Exposed Pad 2.61x3.50 mm (Pad 9), Suggested Pad Layout nach Diodes AP7361C DS37274 Rev. 4-2/5-2, TiroLib")
+	(tags "SO-8EP SOIC-8 EP exposed pad AP7361C-SP")
+	(property "Reference" "REF**"
+		(at 0 -3.6 0)
+		(layer "F.SilkS")
+		(uuid "0158fb7f-52d3-40b5-94dd-0d21b14f5b93")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOIC-8_EP"
+		(at 0 3.6 0)
+		(layer "F.Fab")
+		(uuid "a2fab517-7e64-47c2-82cf-f7079a30d6a6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c8444a6-b16c-4be8-b5ba-166288d6744d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9f429167-0584-4e47-8091-adca9920fe5b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.25 -2.56)
+		(end -2.035 -2.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "113b21ee-6f22-40f5-b0a6-b86823b7f65c")
+	)
+	(fp_line
+		(start -2.035 -2.56)
+		(end 2.035 -2.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "accca1c2-955f-4583-8482-ffa3cb69d006")
+	)
+	(fp_line
+		(start -2.035 2.56)
+		(end 2.035 2.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "afe72ca1-664a-4576-8ca3-8752885cc5c0")
+	)
+	(fp_rect
+		(start -3.5 -2.7)
+		(end 3.5 2.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f5277c0a-e89c-458a-ada3-ea60d2c49c30")
+	)
+	(fp_line
+		(start -1.925 -1.4875)
+		(end -0.9625 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "18a98d73-d5c4-4755-b9e5-46f535b85fd2")
+	)
+	(fp_line
+		(start -1.925 2.45)
+		(end -1.925 -1.4875)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "03214d95-03bf-4bc7-b30a-0841747384c6")
+	)
+	(fp_line
+		(start -0.9625 -2.45)
+		(end 1.925 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e3af4b96-f066-4351-8065-9782d176e4da")
+	)
+	(fp_line
+		(start 1.925 -2.45)
+		(end 1.925 2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5baac438-66ec-4c4a-a734-a2d7e5b3c88c")
+	)
+	(fp_line
+		(start 1.925 2.45)
+		(end -1.925 2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6e421a09-f5de-4382-acaa-4a81a4ef3c01")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6454e97b-ba3c-45f0-949e-63b213b38b24")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -0.5851 -0.7629)
+		(size 0.9202 1.2758)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "a13c6b4d-19ce-40c2-a43a-6bcc131e4820")
+	)
+	(pad "" smd roundrect
+		(at -0.5851 0.7629)
+		(size 0.9202 1.2758)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "013e2f52-7c13-4769-844e-b3be9b279172")
+	)
+	(pad "" smd roundrect
+		(at 0.5851 -0.7629)
+		(size 0.9202 1.2758)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "a0450fcf-c0e3-4231-a580-34ede75c2a14")
+	)
+	(pad "" smd roundrect
+		(at 0.5851 0.7629)
+		(size 0.9202 1.2758)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c67c39dd-1602-4ce4-b18a-05d56840274b")
+	)
+	(pad "1" smd roundrect
+		(at -2.4975 -1.905)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "43f02d37-234f-480a-99e3-b9450f5c8d51")
+	)
+	(pad "2" smd roundrect
+		(at -2.4975 -0.635)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "40378750-ccb0-4d33-99dd-9311fa8cf0fc")
+	)
+	(pad "3" smd roundrect
+		(at -2.4975 0.635)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "f384fcb4-38ff-4b22-aa65-cac6ea0ab487")
+	)
+	(pad "4" smd roundrect
+		(at -2.4975 1.905)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c9b42d91-a7b3-42ec-8ea5-64b31a3a5713")
+	)
+	(pad "5" smd roundrect
+		(at 2.4975 1.905)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "3f69b4a0-0f9a-4384-8af2-2d5e7784309e")
+	)
+	(pad "6" smd roundrect
+		(at 2.4975 0.635)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "148bd912-981b-4591-a28b-740a35f9abe2")
+	)
+	(pad "7" smd roundrect
+		(at 2.4975 -0.635)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "2793f25c-3500-40cb-bdb7-a18b8c507af5")
+	)
+	(pad "8" smd roundrect
+		(at 2.4975 -1.905)
+		(size 1.505 0.802)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "56511287-e993-4476-903a-161f6bf27bd3")
+	)
+	(pad "9" smd roundrect
+		(at 0 0)
+		(size 2.613 3.502)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.0957)
+		(uuid "7dc76674-f937-4e6d-9ae0-d010501d0438")
+	)
+	(embedded_fonts no)
+	(model "S:/Data/KiCAD/Librarys/KiCAD_myPartLib/3dmodels/universal_Packages/TiroLib/SOIC-8_EP.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
