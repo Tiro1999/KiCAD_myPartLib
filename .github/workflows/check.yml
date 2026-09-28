@@ -27,7 +27,7 @@ jobs:
     name: Konsistenz (Footprints, 3D-Modelle, Felder)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - name: Library-Check
         run: python3 .github/scripts/check_library.py
 
@@ -39,7 +39,7 @@ jobs:
       # Das Image läuft sonst als Benutzer "kicad" und darf nicht in den Workspace schreiben.
       options: --user root
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - name: Laden und Vorschauen rendern
         run: bash .github/scripts/render_previews.sh previews
       - uses: actions/upload-artifact@v4
