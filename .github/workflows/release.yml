@@ -1,0 +1,77 @@
+# Stabiles Release: Tag "v1.2.3" pushen, der Rest passiert hier.
+#
+# In KiCad unter Plugin and Content Manager > Manage Repositories eintragen:
+#   https://github.com/<owner>/<repo>/releases/latest/download/repository.json
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  version:
+    name: Version aus Tag
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+    steps:
+      - id: v
+        run: |
+          version=${GITHUB_REF_NAME#v}
+          if [[ ! $version =~ ^[0-9]{1,4}(\.[0-9]{1,4}(\.[0-9]{1,6})?)?$ ]]; then
+            echo "::error::Tag '$GITHUB_REF_NAME' ist keine gültige PCM-Version (erwartet v1, v1.2 oder v1.2.3)"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+  check:
+    needs: version
+    uses: ./.github/workflows/check.yml
+
+  package:
+    needs: [version, check]
+    uses: ./.github/workflows/package.yml
+    with:
+      version: ${{ needs.version.outputs.version }}
+      status: stable
+      download_base: ${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}
+
+  publish:
+    name: Release veröffentlichen
+    needs: [version, package]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: package
+          path: dist
+      - uses: actions/download-artifact@v4
+        with:
+          name: previews
+          path: previews
+      - name: Vorschauen packen
+        run: cd previews && zip -qr ../dist/previews.zip .
+      - name: GitHub-Release anlegen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          cat > notes.md <<EOF
+          **Installation über KiCad:** Plugin and Content Manager > Manage Repositories > \`+\` und diese URL eintragen:
+          \`\`\`
+          $REPO_URL/releases/latest/download/repository.json
+          \`\`\`
+          Alternativ die ZIP über *Install from File…* installieren.
+
+          EOF
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --verify-tag \
+            --title "$GITHUB_REF_NAME" \
+            --notes-file notes.md \
+            --generate-notes

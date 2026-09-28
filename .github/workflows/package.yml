@@ -1,0 +1,47 @@
+# Baut das PCM-Paket. Wird nur von nightly.yml und release.yml aufgerufen.
+name: Package
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: PCM-Version, major[.minor[.patch]]
+        required: true
+        type: string
+      status:
+        description: stable, testing oder development
+        required: true
+        type: string
+      download_base:
+        description: URL, unter der ZIP und packages.json veröffentlicht werden
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: PCM-Paket ${{ inputs.version }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      # Eigenes Python, weil pip ins System-Python von Ubuntu 24.04 nicht installieren darf.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: jsonschema installieren
+        run: python3 -m pip install --quiet jsonschema
+      - name: Paket bauen
+        run: >-
+          python3 .github/scripts/build_package.py
+          --version "${{ inputs.version }}"
+          --status "${{ inputs.status }}"
+          --download-base "${{ inputs.download_base }}"
+          --out dist
+          --validate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: package
+          path: dist
+          retention-days: 14

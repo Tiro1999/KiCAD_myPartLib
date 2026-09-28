@@ -1,0 +1,9 @@
+{
+  "name": "Tiro Part Library",
+  "description": "Eigene Symbole, Footprints und 3D-Modelle als Ergänzung zur offiziellen KiCad-Library.",
+  "description_full": "Eigene KiCad-Symbole, Footprints und 3D-Modelle: Spannungsregler, LEDs, USB-C-Buchsen, Sensoren, kapazitive Bodenfeuchte-Sonden, 2,4-GHz-PCB-Antennen und mechanische Teile.\n\nDie Symbole verweisen auf Footprints mit dem PCM-Präfix (Standard: PCM_Tiro_...). Wer in KiCad ein anderes Library-Präfix für PCM eingestellt hat, muss die Footprint-Zuordnung anpassen.",
+  "license": "MIT",
+  "tags": ["symbols", "footprints", "models"],
+  "kicad_version": "10.0",
+  "lib_nickname_prefix": "PCM_"
+}

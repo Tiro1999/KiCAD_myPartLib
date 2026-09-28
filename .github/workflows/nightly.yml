@@ -1,0 +1,102 @@
+# Baut jede Nacht aus main ein PCM-Paket und veröffentlicht es als Pre-Release
+# mit dem festen Tag "nightly". Ohne neue Commits seit dem letzten Nightly
+# passiert nichts (außer beim manuellen Start mit "force").
+#
+# In KiCad unter Plugin and Content Manager > Manage Repositories eintragen:
+#   https://github.com/<owner>/<repo>/releases/download/nightly/repository.json
+name: Nightly
+
+on:
+  schedule:
+    - cron: "17 2 * * *" # 02:17 UTC
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Auch ohne neue Commits bauen
+        type: boolean
+        default: false
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  changes:
+    name: Neue Commits?
+    runs-on: ubuntu-latest
+    outputs:
+      build: ${{ steps.decide.outputs.build }}
+      version: ${{ steps.decide.outputs.version }}
+    steps:
+      - id: decide
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          last=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/nightly" --jq .object.sha 2>/dev/null || true)
+          if [[ "$last" == "$GITHUB_SHA" && "$FORCE" != "true" ]]; then
+            echo "Nightly ist schon auf $GITHUB_SHA, nichts zu tun."
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+          # PCM-Versionen sind rein numerisch: JJJJ.MTT.HMMSS, z.B. 2026.928.21703
+          echo "version=$(date -u +%Y.%-m%d.%-H%M%S)" >> "$GITHUB_OUTPUT"
+
+  check:
+    needs: changes
+    if: needs.changes.outputs.build == 'true'
+    uses: ./.github/workflows/check.yml
+
+  package:
+    needs: [changes, check]
+    uses: ./.github/workflows/package.yml
+    with:
+      version: ${{ needs.changes.outputs.version }}
+      status: development
+      download_base: ${{ github.server_url }}/${{ github.repository }}/releases/download/nightly
+
+  publish:
+    name: Nightly veröffentlichen
+    needs: [changes, package]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: package
+          path: dist
+      - uses: actions/download-artifact@v4
+        with:
+          name: previews
+          path: previews
+      - name: Vorschauen packen
+        run: cd previews && zip -qr ../dist/previews.zip .
+      - name: Release "nightly" ersetzen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.changes.outputs.version }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          cat > notes.md <<EOF
+          Automatischer Build aus \`main\` @ ${GITHUB_SHA::7}, PCM-Version \`$VERSION\`.
+
+          **Installation über KiCad:** Plugin and Content Manager > Manage Repositories > \`+\` und diese URL eintragen:
+          \`\`\`
+          $REPO_URL/releases/download/nightly/repository.json
+          \`\`\`
+          KiCad bietet dann jedes neue Nightly als Update an. Alternativ die ZIP über *Install from File…* installieren.
+
+          \`previews.zip\` enthält SVG-Vorschauen aller Symbole und Footprints.
+          EOF
+          gh release delete nightly --repo "$GITHUB_REPOSITORY" --cleanup-tag --yes || true
+          gh release create nightly dist/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --prerelease \
+            --title "Nightly $(date -u +%F)" \
+            --notes-file notes.md

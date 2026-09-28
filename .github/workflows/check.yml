@@ -1,0 +1,49 @@
+# Prüft die Library bei jedem Push und Pull Request.
+# Wird außerdem von nightly.yml und release.yml aufgerufen, bevor gepackt wird.
+name: Check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "symbols/**"
+      - "footprints/**"
+      - "3dmodels/**"
+      - ".github/**"
+  pull_request:
+    paths:
+      - "symbols/**"
+      - "footprints/**"
+      - "3dmodels/**"
+      - ".github/**"
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  consistency:
+    name: Konsistenz (Footprints, 3D-Modelle, Felder)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Library-Check
+        run: python3 .github/scripts/check_library.py
+
+  kicad:
+    name: KiCad 10 lädt alle Libraries
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      # Das Image läuft sonst als Benutzer "kicad" und darf nicht in den Workspace schreiben.
+      options: --user root
+    steps:
+      - uses: actions/checkout@v5
+      - name: Laden und Vorschauen rendern
+        run: bash .github/scripts/render_previews.sh previews
+      - uses: actions/upload-artifact@v4
+        with:
+          name: previews
+          path: previews
+          retention-days: 14
