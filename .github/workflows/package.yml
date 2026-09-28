@@ -25,7 +25,7 @@ jobs:
     name: PCM-Paket ${{ inputs.version }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       # Eigenes Python, weil pip ins System-Python von Ubuntu 24.04 nicht installieren darf.
       - uses: actions/setup-python@v5
         with:
